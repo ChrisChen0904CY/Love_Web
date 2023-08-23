@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Suprise</title>
+  <style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	html,body{
+		height: 100%;
+	}
+	body{
+		overflow: hidden;
+		background: url('img/Qixi_BG.png') no-repeat center/cover;
+		z-index: 0;
+	}
+	.snowfall-flakes:before,.snowfall-flakes:after{
+		content: '';
+		position: absolute;
+		width: 10px;
+		height: 16px;
+		border-radius: 10px 10px 0 0;
+		background-color: red;
+		
+	}
+	.snowfall-flakes:before{
+		transform: rotate(-45deg);
+	}
+	.snowfall-flakes:after{
+		transform: translateX(4.3px) rotate(45deg);
+	}
+  </style>
+ </head>
+ <body>
+	<audio style="visibility: hidden" class="bgm" controls src="src/music/陪你度过漫长岁月.mp3" autoplay="true" loop="true"/>
+	<script>
+		window.addEventListener('load', function(){
+			var music = doucument.querySelector('.bgm');
+		 music.play();
+		}
+    </script>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/JQuery-Snowfall/1.7.4/snowfall.jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).snowfall({flakeCount : 50, maxSpeed: 10, minSpeed: 1});
+	</script>
+ </body>
+</html>

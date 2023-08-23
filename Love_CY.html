@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>❤Love CY❤</title>
+<!--CSS引入-->
+<link rel="stylesheet" href="css/page_style.css">
+<link rel="stylesheet" href="css/Imgshow_Style.css">
+<link rel="stylesheet" href="css/main_css.css">
+<!--js引入--> 
+<script src="js/click_heart.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/imgshow.js"></script>
+</head>
+
+<body class="bg">
+	<!--loader-->
+	<div class="loading_page">
+		<div class="cssload-main">
+		<div class="cssload-heart">
+			<span class="cssload-heartL"></span>
+			<span class="cssload-heartR"></span>
+			<span class="cssload-square"></span>
+		</div>
+		<div class="cssload-shadow"></div>
+	</div>
+	</div>
+	<!--End of Loading-->
+	
+	<!--Main Structure of the Page-->
+	<!--头部栏-->
+	<div class="title_bar">
+		<span class="love_days">
+			<font class="butter_font">我们恋爱&nbsp;<b><font class="butter_font" id="days">9999</font></b>&nbsp;天啦！！！</font>
+			<!--恋爱天数计算-->
+			<script>
+				var s1 = '2022-10-04';
+				
+				s1 = new Date(s1.replace(/-/g, "/"));
+				var s2 = new Date();
+				var days = s2.getTime() - s1.getTime();
+				var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+
+				document.getElementById('days').innerHTML = number_of_days;	
+			</script>
+		</span>
+		<span class="logo">
+			<img src="img/logo.png" alt="Logo">
+		</span>
+		<span class="gift">
+			<a href="Suprise.html">
+				<img src="img/CY_on_CH.png" alt="">
+			</a
+			><font class="tips">⬅点我有惊喜哦🎁</font>
+		</span>
+	</div>
+	<!--头部相册-->
+	<div class="hot_albums">
+		<div class="album_info">
+			<img src="img/rabbit.png" alt="">
+			<span class="talk">
+				<p class="blank"></p>
+				<p>我们的回忆都在这里哦</p>
+				<p>先来看看我们的合照吧</p>
+				<p>看看Chris Pig是怎么衬托我的美的😋</p>
+				<p>要是有丑照回家等着睡沙发🫤</p>
+				<p>--Kristine Rabbit🐇</p>
+			</span>
+		</div>
+		<div class="img_show">
+			<!--核心滚动区域-->
+			<ul>
+				<li>
+					<img src="img/albums/1.jpg" alt="">
+				</li>
+				<li>
+					<img src="img/albums/2.jpg" alt="">
+				</li>
+				<li>
+					<img src="img/albums/3.jpg" alt="">
+				</li>
+				<li>
+					<img src="img/albums/4.jpg" alt="">
+				</li>
+				<li>
+					<img src="img/albums/5.jpg" alt="">
+				</li>
+			</ul>
+			<!--左箭头按钮-->
+			<a href="javascript:;" class="prev">👈</a>
+			<!--右箭头按钮-->
+			<a href="javascript:;" class="next">👉</a>
+			<!--小圆点-->
+			<ol class="img_navigation">
+				<!--等待动态生成-->
+			</ol>
+		</div>
+		<div class="pig_talk">
+			<img src="img/pig.png" alt="">
+			<span class="talk">
+				<p class="blank"></p>
+				<p>我有认真拍拍哦📷</p>
+				<p>留住每一个名为爱的瞬间🥰</p>
+				<p>Kristine永远最美💕</p>
+				<p>能不能把睡沙发的惩罚换一换🥺</p>
+				<p>--Chris Pig🐖</p>
+			</span>
+		</div>
+	</div>
+	<!--End of the Main Structure-->
+</body>
+</html>
