@@ -10,6 +10,7 @@ li {
 	text-align: center;
 	position: relative;
 	display: inline-block;
+	
 }
 .album_info {
 	display: inline-block;
@@ -38,10 +39,10 @@ li {
 	width: 550px;
 	height: 320px;
 	background-color: rgba(224,153,154,1.0);
-	margin-top: 20px;
 	overflow: hidden;
 	display: inline-block;
 	vertical-align: top;
+	margin-top: 30px;
 }
 
 .img_show img{
@@ -137,4 +138,14 @@ li {
 	vertical-align: top;
 	width: 200px;
 	height: 320px;
+}
+
+.img_frame {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: top;
+	width: 610px;
+	height: 380px;
+	background-image: url("../img/album_frame.png");
 }

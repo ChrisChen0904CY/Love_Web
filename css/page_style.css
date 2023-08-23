@@ -78,3 +78,16 @@ body {
 	font-size: 25px;
 	color: white;
 }
+
+.bgm_but {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	z-index: 998;
+}
+.bgm_but a {
+	width: 60px;
+	height: 60px;
+	z-index: 999;
+}

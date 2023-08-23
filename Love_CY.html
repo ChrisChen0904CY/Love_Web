@@ -12,6 +12,7 @@
 <script src="js/animate.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/imgshow.js"></script>
+<script src="js/bgm_control.js"></script>
 </head>
 
 <body class="bg">
@@ -29,6 +30,15 @@
 	<!--End of Loading-->
 	
 	<!--Main Structure of the Page-->
+	<!--BGM-->
+	<div style="display: none;">
+		<audio id="BGM" src="src/music/Love_One_Person.mp3" loop="true" style="visibility: hidden" controls autoplay="false"/>
+	</div>
+	<div class="bgm_but">
+		<a href="javascript:;" class="bgm_control">
+			<img src="img/music_pause.png" alt="" class="bgm_img">
+		</a>
+	</div>
 	<!--头部栏-->
 	<div class="title_bar">
 		<span class="love_days">
@@ -68,33 +78,35 @@
 				<p>--Kristine Rabbit🐇</p>
 			</span>
 		</div>
-		<div class="img_show">
-			<!--核心滚动区域-->
-			<ul>
-				<li>
-					<img src="img/albums/1.jpg" alt="">
-				</li>
-				<li>
-					<img src="img/albums/2.jpg" alt="">
-				</li>
-				<li>
-					<img src="img/albums/3.jpg" alt="">
-				</li>
-				<li>
-					<img src="img/albums/4.jpg" alt="">
-				</li>
-				<li>
-					<img src="img/albums/5.jpg" alt="">
-				</li>
-			</ul>
-			<!--左箭头按钮-->
-			<a href="javascript:;" class="prev">👈</a>
-			<!--右箭头按钮-->
-			<a href="javascript:;" class="next">👉</a>
-			<!--小圆点-->
-			<ol class="img_navigation">
-				<!--等待动态生成-->
-			</ol>
+		<div class="img_frame">
+			<div class="img_show">
+				<!--核心滚动区域-->
+				<ul>
+					<li>
+						<img src="img/albums/1.jpg" alt="">
+					</li>
+					<li>
+						<img src="img/albums/2.jpg" alt="">
+					</li>
+					<li>
+						<img src="img/albums/3.jpg" alt="">
+					</li>
+					<li>
+						<img src="img/albums/4.jpg" alt="">
+					</li>
+					<li>
+						<img src="img/albums/5.jpg" alt="">
+					</li>
+				</ul>
+				<!--左箭头按钮-->
+				<a href="javascript:;" class="prev">👈</a>
+				<!--右箭头按钮-->
+				<a href="javascript:;" class="next">👉</a>
+				<!--小圆点-->
+				<ol class="img_navigation">
+					<!--等待动态生成-->
+				</ol>
+			</div>
 		</div>
 		<div class="pig_talk">
 			<img src="img/pig.png" alt="">

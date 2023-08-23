@@ -1,7 +1,6 @@
 // JavaScript Document
 window.addEventListener('load', function(){
 	// 加载完延时2.5秒关闭动画
-	var disp_div = document.querySelector('.cssload-main');
 	var load_page = document.querySelector('.loading_page');
 	var load_timer = setInterval(function() {
 		// 关闭加载动画
@@ -119,7 +118,7 @@ window.addEventListener('load', function(){
 			ol.children[i].className = '';
 		}
 		ol.children[circle].className = 'selected';
-	};
+	}
 	// 自动播放设置
 	var timer = setInterval(function() {
 		// 手动调用右侧点击
