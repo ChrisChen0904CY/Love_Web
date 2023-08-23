@@ -1,11 +1,11 @@
 // JavaScript Document
 window.addEventListener('load', function(){
-	// 加载完延时2.5秒关闭动画
+	// 加载完延时1.5秒关闭动画
 	var load_page = document.querySelector('.loading_page');
 	var load_timer = setInterval(function() {
 		// 关闭加载动画
 		load_page.style.display = 'none';
-	}, 2500);
+	}, 1500);
 	// 获取左右箭头元素
 	var arrow_l = document.querySelector('.prev');
 	var arrow_r = document.querySelector('.next');

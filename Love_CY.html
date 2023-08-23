@@ -19,25 +19,32 @@
 	<!--loader-->
 	<div class="loading_page">
 		<div class="cssload-main">
-		<div class="cssload-heart">
-			<span class="cssload-heartL"></span>
-			<span class="cssload-heartR"></span>
-			<span class="cssload-square"></span>
+			<div class="cssload-heart">
+				<span class="cssload-heartL"></span>
+				<span class="cssload-heartR"></span>
+				<span class="cssload-square"></span>
+			</div>
+			<div class="cssload-shadow"></div>
 		</div>
-		<div class="cssload-shadow"></div>
-	</div>
 	</div>
 	<!--End of Loading-->
 	
 	<!--Main Structure of the Page-->
 	<!--BGM-->
 	<div style="display: none;">
-		<audio id="BGM" src="src/music/Love_One_Person.mp3" loop="true" style="visibility: hidden" controls autoplay="false"/>
+		<audio id="BGM" src="src/music/喜欢一个人-陈奕迅.mp3" loop="true" style="visibility: hidden" controls autoplay="false"/>
 	</div>
-	<div class="bgm_but">
-		<a href="javascript:;" class="bgm_control">
-			<img src="img/music_pause.png" alt="" class="bgm_img">
-		</a>
+	<div class="bgm_box">
+		<div class="bgm_but">
+			<a href="javascript:;" class="bgm_control">
+				<img src="img/music_pause.png" alt="" class="bgm_img">
+			</a>
+		</div>
+		<div class="bgm_info">
+			<font class="info">
+				暂停中▶
+			</font>
+		</div>
 	</div>
 	<!--头部栏-->
 	<div class="title_bar">
@@ -83,25 +90,29 @@
 				<!--核心滚动区域-->
 				<ul>
 					<li>
-						<img src="img/albums/1.jpg" alt="">
+						<img class="album_photo" src="img/albums/1.jpg" alt="">
 					</li>
 					<li>
-						<img src="img/albums/2.jpg" alt="">
+						<img class="album_photo" src="img/albums/2.jpg" alt="">
 					</li>
 					<li>
-						<img src="img/albums/3.jpg" alt="">
+						<img class="album_photo" src="img/albums/3.jpg" alt="">
 					</li>
 					<li>
-						<img src="img/albums/4.jpg" alt="">
+						<img class="album_photo" src="img/albums/4.jpg" alt="">
 					</li>
 					<li>
-						<img src="img/albums/5.jpg" alt="">
+						<img class="album_photo" src="img/albums/5.jpg" alt="">
 					</li>
 				</ul>
 				<!--左箭头按钮-->
-				<a href="javascript:;" class="prev">👈</a>
+				<a href="javascript:;" class="prev">
+					<img src="img/arrow-left.png" alt="" class="arrow-left">
+				</a>
 				<!--右箭头按钮-->
-				<a href="javascript:;" class="next">👉</a>
+				<a href="javascript:;" class="next">
+					<img src="img/arrow-right.png" alt="" class="arrow-right">
+				</a>
 				<!--小圆点-->
 				<ol class="img_navigation">
 					<!--等待动态生成-->
