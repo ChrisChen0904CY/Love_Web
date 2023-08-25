@@ -7,6 +7,11 @@
 	text-decoration: none;
 }
 
+/* 清除小圆点 */
+li {
+	list-style: none;
+}
+
 body {
 	background-color: rgba(224,153,154,0.7);
 }
@@ -65,16 +70,12 @@ body {
 
 /* 字体引入 */
 @font-face {
-	font-family: ZCoolButter;
-	src: url("../src/fonts/ZCoolButter.ttf") format('truetype');
-}
-@font-face {
 	font-family: HKBaby;
 	src: url("../src/fonts/HKBaby.ttf") format('truetype');
 }
 
 .butter_font {
-	font-family: ZCoolButter, HKBaby;
+	font-family: HKBaby;
 	font-size: 25px;
 	color: white;
 }
@@ -113,4 +114,46 @@ body {
 	line-height: 60px;
 	display: inline-block;
 	z-index: 999;
+}
+.function {
+	width: 100%;
+	height: 700px;
+	margin-top: 90px;
+	position: relative;
+}
+.tips_blank {
+	position: absolute;
+	left: 70px;
+	display: inline-block;
+	width: 530px;
+	height: 680px;
+	background-image: url("../img/Todolist.png");
+}
+.todolist {
+	width: 300px;
+	height: 480px;
+	margin-left: 100px;
+	margin-top: 140px;
+}
+.todolist li {
+	width: 330px;
+	height: 30px;
+	text-align: center;
+	display: iblock;
+}
+.todolist li img {
+	display: inline-block;
+	vertical-align: top;
+	width: 30px;
+	height: 30px;
+}
+.todolist li font {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	width: 270px;
+	height: 30px;
+	line-height: 30px;
+	font-family: HKBaby;
+	font-size: 24px;
 }
