@@ -115,12 +115,49 @@ body {
 	display: inline-block;
 	z-index: 999;
 }
+/* 导航层 */
+.bar {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	margin-top: 90px;
+}
+.bar_icon {
+	position: absolute;
+	left: 80px;
+	width: 30px;
+	height: 30px;
+	margin-top: 2.4px;
+	display: inline-block;
+	vertical-align: top;
+}
+/* 功能区导航栏 */
+.nav_bar {
+	width: 1280px;
+	margin-left: 110px;
+	height: 30px;
+	background: white;
+	position: relative;
+	border: solid;
+	border-color: rgba(20,20,20,1.00);
+	display: inline-block;
+	vertical-align: top;
+}
+.nav_bar font {
+	font-family: HKBaby;
+	width: 600px;
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	font-size: 24px;
+}
 .function {
 	width: 100%;
-	height: 700px;
-	margin-top: 90px;
+	height: 680px;
+	margin-top: 20px;
 	position: relative;
 }
+/* 提示板 */
 .tips_blank {
 	position: absolute;
 	left: 70px;
@@ -139,7 +176,7 @@ body {
 	width: 330px;
 	height: 30px;
 	text-align: center;
-	display: iblock;
+	display: inline-block;
 }
 .todolist li img {
 	display: inline-block;
@@ -156,4 +193,14 @@ body {
 	line-height: 30px;
 	font-family: HKBaby;
 	font-size: 24px;
+}
+/*听写板*/
+.dec_board {
+	position: relative;
+	margin-left: 595px;
+	width: 800px;
+	height: 510px;
+	background-image: url("../img/computer_board.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
 }
