@@ -2,7 +2,7 @@
 (function () {
   var a_idx = 0;
   window.onclick = function (event) {
-    var content = new Array("❤CY❤", "❤Kristine❤", "❤七夕快乐~❤");
+    var content = new Array("❤CY❤", "❤Kristine❤", "❤Chris&Kris❤", "❤Trust❤");
 
     var heart = document.createElement("b"); //创建b元素
     heart.onselectstart = new Function('event.returnValue=false'); //防止拖动
