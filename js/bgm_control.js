@@ -8,7 +8,7 @@ window.addEventListener('load', function(){
 	var prev = document.querySelector('.bgm_prev');
 	var next = document.querySelector('.bgm_next');
 	// 所有歌曲名称
-	var bgms = ["喜欢一个人-陈奕迅", "陪你度过漫长岁月-陈奕迅"];
+	var bgms = ["喜欢一个人-陈奕迅", "陪你度过漫长岁月-陈奕迅", "淘汰-陈奕迅", "还有什么可以送给你-陈奕迅"];
 	var bgm_len = bgms.length;
 	var cur_index = 0;
 	// 播放点击事件绑定
@@ -34,6 +34,7 @@ window.addEventListener('load', function(){
 		bgm_audio.load();
 		cont_img.src = "img/music_play.png";
 		bgm_info.innerHTML = "正在播放: "+bgms[cur_index]+"♪";
+		bgm_audio.play();
 	});
 	// 后一首歌点击
 	next.addEventListener('click', function(){
@@ -45,5 +46,6 @@ window.addEventListener('load', function(){
 		bgm_audio.load();
 		cont_img.src = "img/music_play.png";
 		bgm_info.innerHTML = "正在播放: "+bgms[cur_index]+"♪";
+		bgm_audio.play();
 	});
 })
