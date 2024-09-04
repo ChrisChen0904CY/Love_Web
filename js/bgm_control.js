@@ -8,7 +8,8 @@ window.addEventListener('load', function(){
 	var prev = document.querySelector('.bgm_prev');
 	var next = document.querySelector('.bgm_next');
 	// 所有歌曲名称
-	var bgms = ["喜欢一个人-陈奕迅", "陪你度过漫长岁月-陈奕迅", "淘汰-陈奕迅", "还有什么可以送给你-陈奕迅"];
+	var bgms = ["喜欢一个人-陈奕迅", "陪你度过漫长岁月-陈奕迅", "淘汰-陈奕迅", "还有什么可以送给你-陈奕迅",
+                "勿听-张紫宁,赵紫骅"];
 	var bgm_len = bgms.length;
 	var cur_index = 0;
 	// 播放点击事件绑定
